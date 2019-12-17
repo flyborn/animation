@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?
+    family=Montserrat:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <title>animation</title>
+</head>
+<style type="text/css">
+    body {
+        padding: 0;
+    }
+    main{
+        width: 1295px;
+        height: 700px;
+        position: relative;
+        border: 0;
+        background: #8b6552;
+     }
+    .block1{
+        width: 260px;
+        height: 700px;
+        padding: 0;
+        position: fixed;
+        border: 1px solid #472621;
+        background: #8b6552;
+    }
+    .block2{
+        width: 260px;
+        height: 700px;
+        padding: 0;
+        position: fixed;
+        border: 1px solid #472621;
+        background: #472621;
+    }
+    .block2:hover{
+        width: 260px;
+        height: 700px;
+        position: fixed;
+        z-index: 2;
+        background:  #472621;
+    }
+    .block2:hover > .hart{
+         margin-top: 160px;
+         margin-left: 70px;
+         text-align: center;
+         font-size: 8em;
+     }
+    .block2:hover > .texthart{
+        margin-top: 170px;
+    }
+    .block1:hover{
+        width: 490px;
+        height: 700px;
+        position: fixed;
+        padding: 0;
+        z-index: 5;
+        opacity:0.9;
+        transition-duration: 0.3s;
+        transform-origin: right;
+        border: 1px solid #8b6552;
+        box-shadow: 0 5px 85px #1c1617, 0 5px 85px #472621;
+        background:#8b6552;
+    }
+    .blocktext1{
+        width: 40px;
+        height: 300px;
+        margin-left: 110px;
+        margin-top:-50px;
+        writing-mode: tb;
+        padding: 0px;
+        text-align: center;
+        font-family:Montserrat;
+        font-size: 2em;
+        font-weight: bolder;
+        background: #8b6552;
+        color: antiquewhite;
+    }
+    .block1:hover > .blocktext1{
+        width: 490px;
+        height: 40px;
+        margin-top:170px;
+        margin-left: 0px;
+        text-align: center;
+        writing-mode: horizontal-tb;
+        background: #cd2d53;
+        transition-duration: 0.3s;
+        color: antiquewhite;
+    }
+    .block1:hover > .text{
+         color: white;
+         height: 250px;
+         margin-top: 130px;
+         font-family:Montserrat;
+         font-size: 2em;
+     }
+    .block1:hover + .block2{
+        width: 260px;
+        height: 700px;
+        position: fixed;
+        z-index: 2;
+        border: 1px solid #8b6552;
+        background: #8b6552;
+    }
+    #id2{
+        left: 260px;
+    }
+    #id3{
+        left:520px;
+    }
+    #id4{
+        left: 780px;
+    }
+    #id5{
+        left: 1040px;
+    }
+    .cifra{
+        height: 50px;
+        text-align: center;
+        margin-top: 50px;
+        padding: 0;
+        font-size: 3em;
+        color: antiquewhite;
+        font-family: Montserrat;
+    }
+    .text{
+        text-align: center;
+        margin-top: 130px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 200px;
+        font-family: Montserrat;
+        font-size: 2px;
+        color: #8b6552;
+    }
+    .hart{
+        width: 100px;
+        height: 100px;
+        margin-top: 200px;
+        margin-left: 80px;
+        color:#d32a53;
+        text-align: center;
+        font-size: 5em;
+    }
+    .texthart{
+        color: white;
+        height: 250px;
+        margin-top: 130px;
+        text-align: center;
+        font-family:Montserrat;
+        font-size: 2em;
+    }
+</style>
+<body>
+    <main>
+            <div class="block1">
+                <div class="cifra">1</div>
+                <div class="text">
+                    Просто текст для блока<br>
+                    ничего особенного,
+                    можно не<br>вчитываться.
+                    Просто текст и ничего больше.
+                    Еще немного - заполнить блок)
+                </div>
+                <div class="blocktext1">
+                    Lorem imputem
+                </div>
+            </div>
+            <div class="block1" id="id2">
+                <div class="cifra">2</div>
+                <div class="text">
+                    Просто текст для блока<br>
+                    ничего особенного,
+                    можно не<br>вчитываться.
+                    Просто текст и ничего больше.
+                    Еще немного - заполнить блок)
+                </div>
+                <div class="blocktext1">
+                    Lorem imputem
+                </div>
+            </div>
+            <div class="block1" id="id3">
+                <div class="cifra">3</div>
+                <div class="text">
+                    Просто текст для блока<br>
+                    ничего особенного,
+                    можно не<br>вчитываться.
+                    Просто текст и ничего больше.
+                    Еще немного - заполнить блок)
+                </div>
+                <div class="blocktext1">
+                    Lorem imputem
+                </div>
+            </div>
+            <div class="block1" id="id4">
+                <div class="cifra">4</div>
+                <div class="text">
+                    Просто текст для блока<br>
+                    ничего особенного,
+                    можно не<br>вчитываться.
+                    Просто текст и ничего больше.
+                    Еще немного - заполнить блок)
+                </div>
+                <div class="blocktext1">
+                    Lorem imputem
+                </div>
+            </div>
+            <div class="block2" id="id5">
+                <div class="cifra">5</div>
+                <div class="hart" >
+                    &#10084;
+                </div>
+                <div class="texthart">
+                    Lorem imputem
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>
